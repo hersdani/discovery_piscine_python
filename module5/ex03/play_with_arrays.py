@@ -13,8 +13,9 @@
 # **************************************************************************** #
 
 original_array = [2, 8, 9, 48, 8, 22, -12, 2]
-new_array = []
-[new_array.append(x) for x in original_array if x not in new_array]
+# the 2 lines below are unnecessary, as a set has already unique values
+#new_array = []
+#[new_array.append(x) for x in original_array if x not in new_array]
 new_set = {x + 2 for x in original_array if x > 5}
 print(original_array)
 print(new_set)
