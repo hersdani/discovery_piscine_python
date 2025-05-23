@@ -14,9 +14,7 @@
 
 def average(scores_dict):
 	scores = scores_dict.values()
-	total_score = sum(scores)
-	number_of_students = len(scores)
-	return total_score / number_of_students
+	return sum(scores) / len(scores)
 
 if __name__ == "__main__":
 	class_3B = {
