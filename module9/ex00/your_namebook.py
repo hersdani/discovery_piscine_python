@@ -15,12 +15,9 @@
 def array_of_names(name_dict):
     full_names = []
     for first_name, last_name in name_dict.items():
-        cap_first_name = first_name.capitalize()
-        cap_last_name = last_name.capitalize()
-        full_names.append(f"{cap_first_name} {cap_last_name}")
+        full_names.append(f"{first_name.capitalize()} {last_name.capitalize()}")
     return full_names
 
-# Example usage:
 if __name__ == "__main__":
     persons = {
         "jean": "valjean",
